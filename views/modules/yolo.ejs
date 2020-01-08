@@ -1,0 +1,69 @@
+<html>
+
+<% include ../blocks/head.ejs %>
+
+
+<body style="padding-top: 100px;">
+  <% include ../blocks/navbar.ejs %>
+
+  <div class="container">
+
+    <div class="page-header" id="banner">
+
+      <div class="row"></div>
+      <div class="col-lg-12">
+        <div class="page-header">
+          <h1 id="typography">Pytorch-Yolov3</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="bs-docs-section">
+
+      <div class="col-6">
+        <div class="bs-component">
+          <h3>Classes Name設定</h3>
+          <p class="mb-0">根據類別名稱加到data/custom/class.names中，每一列一個類別名稱。</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="bs-docs-section">
+
+      <div class="col-6">
+        <div class="bs-component">
+          <h3>config/custom.data</h3>
+          <p class="mb-0">設定類別大小、類別名稱、訓練資料集及測試資料集</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="bs-docs-section">
+
+      <div class="col-6">
+        <div class="bs-component">
+          <h3>train</h3>
+          <p class="mb-0">根據類別名稱加到data/custom/class.names中，每一列一個類別名稱。</p>
+
+        </div>
+      </div>
+    </div>
+    <div class="bs-docs-section">
+
+      <div class="col-6">
+        <div class="bs-component">
+          <h3>test</h3>
+          <p class="mb-0">跟目錄底下的所有checkmodel(e.g. day_checkmodel.ipynb)都是test model，執行到第二個cell就會跑出AP數值</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</body>
+
+<% include ../blocks/footer.ejs %>
+
+</html>
