@@ -16,8 +16,13 @@
         <div class="row">
           
           <div class="col-lg-12" style="margin-top: 30px;">
-            <h3>摘要<small class="text-muted">Abstract</small></h3>
-              <p class="lead" style="font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;">　　為探討像素差異(pixel difference, PD)對於神經網路框架影響，因此提出Roadcrack Detector框架，透過此框架來識別道路損害，其框架主要分為兩部分，Gaussian Mixture Model(GMM) 資料分群階段及神經網路訓練階段。在GMM 資料分群階段，會先把圖片先進行降維，透過Gaussian Mixture Model(GMM) 像素分群辨別圖片各個pixel分為多類來進行探討，並統計各個圖片亮所佔的比例，最後進行Gaussian Mixture Model(GMM)圖片分群把圖片相近的分為多類。在神經網路訓練階段，圖片資料會先進行資料預處理，之後透過目標偵測框架來進行訓練。</p>
+            <!-- <h3>摘要<small class="text-muted">Abstract</small></h3> -->
+              <p class="lead" style="font-family: 'Helvetica', 'Arial','LiHei Pro','黑體-繁','微軟正黑體', 'sans-serif';">為探討像素差異(pixel difference, PD)對於神經網路框架影響，因此提出Roadcrack Detector框架，架構圖如下所示。</p>
+              <p class="lead" style="font-family: 'Helvetica', 'Arial','LiHei Pro','黑體-繁','微軟正黑體', 'sans-serif';">主要分為GMM分群及目標識別兩部份，透過用GMM的前處理，來找出對目標識別框架的影響。</p>
+
+            </div>
+          <div class="col-lg-12" style="margin-top: 30px;">
+            <img height="350" width="650"  style="display:block; margin:auto;" src="/images/architecture.png" />
           </div>
         </div>
       </div>
