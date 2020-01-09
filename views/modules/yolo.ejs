@@ -18,12 +18,26 @@
       </div>
     </div> -->
 
+    <!--Programming-->
+    <div class="bs-docs-section">
+      <div class="col-12">
+        <h3>下載YOLO專案檔並安裝套件</h3>
+        <div class="bs-component" style="background-color: #303030;">
+          
+          <p style="background-color: #303030;padding: 5px;">$ git clone
+            https://github.com/eriklindernoren/PyTorch-YOLOv3<br>$ cd PyTorch-YOLOv3/<br>$ sudo pip3 install -r requirements.txt</p>
+        </div>
+      </div>
+    </div>
+
+
+
     <div class="bs-docs-section">
 
       <div class="col-6">
         <div class="bs-component">
-          <h3>Classes Name設定</h3>
-          <p class="mb-0">根據類別名稱加到data/custom/class.names中，每一列一個類別名稱。</p>
+          <h3>設定Classes Name</h3>
+          <p class="mb-0">根據類別名稱加到data/custom/class.names中，每一列一個類別名稱。<br>類別名稱檔：<a href="/pyfiles/YOLO/classes.names">點我下載</a></p>
 
         </div>
       </div>
@@ -33,8 +47,8 @@
 
       <div class="col-6">
         <div class="bs-component">
-          <h3>config/custom.data</h3>
-          <p class="mb-0">設定類別大小、類別名稱、訓練資料集及測試資料集</p>
+          <h3>設定config/custom.data</h3>
+          <p class="mb-0">設定類別大小、類別名稱、訓練資料集及測試資料集<br>標記檔：<a href="/pyfiles/YOLO/AnnotationFiles.zip">點我下載</a>（需注意文本內容的檔案路徑需對應至資料集）</p>
 
         </div>
       </div>
@@ -42,10 +56,12 @@
 
     <div class="bs-docs-section">
 
-      <div class="col-6">
-        <div class="bs-component">
-          <h3>train</h3>
-          <p class="mb-0">根據類別名稱加到data/custom/class.names中，每一列一個類別名稱。</p>
+      <div class="col-12">
+        <h3>訓練</h3>
+        <div class="bs-component"   style="background-color: #303030;">
+          
+          <p style="background-color: #303030;padding: 5px;">$ python3 train.py --model_def config/yolov3-custom.cfg --data_config config/custom.data</p>
+
 
         </div>
       </div>
@@ -54,9 +70,8 @@
 
       <div class="col-6">
         <div class="bs-component">
-          <h3>test</h3>
-          <p class="mb-0">跟目錄底下的所有checkmodel(e.g. day_checkmodel.ipynb)都是test model，執行到第二個cell就會跑出AP數值</p>
-
+          <h3>測試</h3>
+          <p class="mb-0">測試檔：<a href="/pyfiles/YOLO/eval.zip">點我下載</a>（需調整部份程式路徑,如:已訓練參數和資料集目錄）<br>YOLO已訓練參數：<a href="">點我下載</a></p>
         </div>
       </div>
     </div>

@@ -9,6 +9,7 @@ router.get('/yolo', function(req, res, next) {
 router.get('/ssd', function(req, res, next) {
     //res.render('default', { title: 'Express' });
     //res.render('datasets');
+    res.render('modules/ssd' ,{'title':'SSD神經網路'});
 });
 
 module.exports = router;
