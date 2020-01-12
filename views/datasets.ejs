@@ -1,25 +1,158 @@
 <% include blocks/head.ejs %>
+
 <body style="padding-top: 100px;">
-    <% include blocks/navbar.ejs %>
-  
-  
-    <div class="container">
-  
-      <div class="page-header" id="banner">
-        <div class="row">
-  
-          
-          
-            <div class="col-lg-12" style="margin-top: 30px;">
-                <h3>資料集說明<small class="text-muted">Description</small></h3>
-                 <img height="300" width="500" style="display:block; margin:auto;"  src="/images/statistics.png" />
-              </div>
-            <div class="col-lg-12" style="margin-top: 30px;">
-              <h3>資料集下載<small class="text-muted">Download</small></h3>
-                <a href="https://drive.google.com/file/d/19zEoWqJ5HNH9sy1pzDixZNWCUNZZmpPB/view?usp=sharing">Google雲端</a>
-            </div>
-          
+  <% include blocks/navbar.ejs %>
+
+
+  <div class="container">
+
+    <div class="page-header" id="banner">
+      <div class="row">
+        <div class="col-lg-12" style="margin-top: 30px;">
+          <h3>資料集下載<small class="text-muted">Download</small></h3>
+          <a href="https://drive.google.com/file/d/19zEoWqJ5HNH9sy1pzDixZNWCUNZZmpPB/view?usp=sharing">Google雲端</a>
         </div>
+        <div class="col-lg-12" style="margin-top: 30px;">
+          <h3>資料夾說明<small class="text-muted">Folder description</small></h3>
+
+          <p class="lead" style="font-family: 'Helvetica', 'Arial','LiHei Pro','黑體-繁','微軟正黑體', 'sans-serif';"><br>
+            壓縮檔中有主要3個資料夾,分別為Annotations、ImageSets以及JPEGImages,資料格式是按照VOC的格式。<br><br>
+            Annotations：檔案為XML格式用來記錄檔名及圖片資訊,如：目標位置、目標類別等。<br>
+            ImageSets：檔案為記錄訓練資料及測試資料,因此其中都是圖片名稱。<br>
+            JPEGImages：所有檔案皆為圖片檔案。<br>
+          </p>
+        </div>
+        <div class="col-lg-12" style="margin-top: 30px;">
+          <h3>資料集標記說明<small class="text-muted">Data description</small></h3>
+          <table  class="table-hover" align="center">
+            <tr>
+              <td align="center">
+                <h3>類別</h3>
+              </td>
+              <td align="center">
+                <h3>路面損害類型</h3>
+              </td>
+              <td align="center">
+                <h3>圖片所示</h3>
+              </td>
+            </tr>
+            <tbody>
+
+            <tr>
+              <td>
+                <h4>D00</h4>
+              </td>
+              <td>
+                <h4>縱向裂痕(Longitudinal crack)
+                </h4>
+              </td>
+              <td>
+                <img width="100" src="/images/D00.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>D01</h4>
+              </td>
+              <td>
+                <h4>縱向填補(Longitudinal construction joint)
+
+                </h4>
+              </td>
+              <td>
+                <img width="60" src="/images/D01.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>D10</h4>
+              </td>
+              <td>
+                <h4>橫向裂痕(Lateral crack)
+
+                </h4>
+              </td>
+              <td>
+                <img width="100" src="/images/D10.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>D11</h4>
+              </td>
+              <td>
+                <h4>橫向填補(Lateral construction joint)
+                </h4>
+              </td>
+              <td>
+                <img width="100" src="/images/D11.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>D20</h4>
+              </td>
+              <td>
+                <h4>龜裂(Alligator crack)
+                </h4>
+              </td>
+              <td>
+                <img width="100" src="/images/D20.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>D40</h4>
+              </td>
+              <td>
+                <h4>坑洞、凹凸(Rutting、bump)
+                </h4>
+              </td>
+              <td>
+                <img width="100" src="/images/D40.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>D43</h4>
+              </td>
+              <td>
+                <h4>斑馬線模糊(crosswalk blur)
+                </h4>
+              </td>
+              <td>
+                <img width="100" src="/images/D43.png" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <h4>D44</h4>
+              </td>
+              <td>
+                <h4>白線模糊(white line blur)
+                </h4>
+              </td>
+              <td>
+                <img width="100" src="/images/D44.png" />
+              </td>
+            </tr>
+            </tbody>
+          </table>
+          <!-- <h4>各類別標記次數</h4>
+
+          <img height="300" width="500" style="display:block; margin:auto;" src="/images/statistics.png" />
+        -->
+        </div> 
+        
+
       </div>
-  </body>
-  <% include blocks/footer.ejs %>
+    </div>
+</body>
+<% include blocks/footer.ejs %>
+
+
+<style>
+td{
+  text-align: center;
+}
+</style>
